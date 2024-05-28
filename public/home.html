@@ -1,387 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Growth App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/logo.png" alt="logo" />
-          </a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Web Design in Tamil</title>
+
+    <meta property="og:title" content="Learn Web Design in Tamil - For Free - CyberDude" />
+    <meta property="og:description"
+        content="Learning web design is one of most important skill which everyone should learn right now. Learn this absolutely free @ cyberdude." />
+    <meta property="og:image" content="./assets/img/technologies/js-logo.jpg" />
+
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+
+    <!-- FontAwesome 5.15.3 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- ========== Start Header ========== -->
+    <header class="header">
+        <div>
+            <h2>WebDesign <span class="font-ta color-anim">{ தமிழ் }</span></h2>
         </div>
-
-        <div class="main-menu">
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a class="btn" href="#"> <i class="fas fa-user"></i> Log In </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Hamburger Button -->
-        <button class="hamburger-button">
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
-        </button>
-        <div class="mobile-menu">
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a class="btn" href="#"> <i class="fas fa-user"></i> Log In </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h1 class="hero-heading text-xxl">
-            A powerful solution to grow your startup. Fast!
-          </h1>
-          <p class="hero-text">
-            Organize, collaborate, and track progress seamlessly with our
-            one-stop-shop startup growth tool.
-          </p>
-          <div class="hero-buttons">
-            <a href="#" class="btn btn-primary">Get Started</a>
-            <a href="#" class="btn"
-              ><i class="fas fa-laptop"></i> Book a Demo</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Video Section -->
-    <section class="video bg-black">
-      <div class="container-sm">
-        <h2 class="video-heading text-xl text-center">
-          See how it works and get started in less than 2 minutes
-        </h2>
-        <div class="video-content">
-          <a href="#">
-            <img
-              src="images/video-preview.png"
-              alt="video"
-              class="video-preview"
-            />
-          </a>
-
-          <a href="#" class="btn btn-primary">Get Started</a>
-        </div>
-      </div>
-    </section>
-    <!-- Testimonials -->
-    <section class="testimonials bg-dark">
-      <div class="container">
-        <h3 class="testimonials-heading text-xl">
-          Don't just take our word for it, see the success stories from
-          businesses just like yours.
-        </h3>
-        <div class="testimonials-grid">
-          <div class="card">
-            <p>
-              “Our business has seen a significant increase in productivity
-              since we started using the Growth app.”
-            </p>
-
-            <p>Katherine Smith</p>
-            <p>Capodopera</p>
-          </div>
-
-          <div class="card">
-            <p>
-              “As a small business owner, it's important to have a tool that can
-              help me keep track of everything. The Growth app has been a
-              lifesaver for me, allowing me to manage my contacts, schedule
-              appointments, and track progress all in one place..”
-            </p>
-
-            <p>Johnathan Lee</p>
-            <p>Red Bolt</p>
-          </div>
-
-          <div class="card">
-            <p>
-              “The dashboards and reporting feature has provided valuable
-              insights into our performance and helped us make data-driven
-              decisions. It's a game changer for us.”
-            </p>
-
-            <p>David Wilson</p>
-            <p>Slide</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pricing -->
-    <section class="pricing">
-      <div class="container-sm">
-        <h3 class="pricing-heading text-xl text-center">Pricing</h3>
-        <p class="pricing-subheading text-md text-center">
-          Start free and scale while you grow. No hidden fees. Unlimited users
-          for free.
-        </p>
-        <div class="pricing-grid">
-          <!-- Pricing Card 1 -->
-          <div class="card bg-light">
-            <div class="pricing-card-header">
-              <h4 class="pricing-heading text-xl">Simple</h4>
-              <p class="pricing-card-subheading">
-                Keep track of your contacts, gain valuable insights, analyse
-                live data and performance metrics.
-              </p>
-              <p class="pricing-card-price">
-                <span class="text-xl">Free</span>
-                *No credit card needed
-              </p>
+        <div>
+            <div class="nav-toggler">
+                <i class="navIcon fa fa-bars"></i>
+                <i class="navIcon fa fa-times hidden"></i>
             </div>
-            <div class="pricing-card-body">
-              <ul>
-                <li><i class="fas fa-check"></i> Real-Time Monitoring</li>
-                <li>
-                  <i class="fas fa-check"></i>Track key performance indicators
+            <ul class="header--menu">
+                <li class="header--menu__item">
+                    <a href="#home" class="active">Home</a>
                 </li>
-                <li><i class="fas fa-check"></i>Schedule appointments</li>
-                <li>
-                  <i class="fas fa-check"></i>Organize, delegate and keep track
-                  of tasks
+                <li class="header--menu__item">
+                    <a href="#about">About</a>
                 </li>
-              </ul>
-              <a href="#" class="btn btn-primary btn-block">Get Started</a>
-            </div>
-          </div>
-
-          <!-- Pricing Card 2 -->
-          <div class="card bg-black">
-            <div class="pricing-card-header">
-              <h4 class="pricing-card-heading text-xl">Premium</h4>
-              <p class="pricing-card-subheading">
-                Keep track of your contacts, gain valuable insights, analyze
-                live data and performance metrics.
-              </p>
-              <p class="pricing-card-price">
-                <span class="text-xl">$49</span> /month
-              </p>
-            </div>
-            <div class="pricing-card-body">
-              <p>Everything from the free plan plus:</p>
-              <ul>
-                <li><i class="fas fa-check"></i>Data-driven decisions</li>
-                <li><i class="fas fa-check"></i>Data visualization</li>
-                <li><i class="fas fa-check"></i>Schedule appointments</li>
-              </ul>
-              <a href="#" class="btn btn-primary btn-block">Get Started</a>
-            </div>
-          </div>
-        </div>
-        <p class="pricing-footer text-center">
-          All prices are in USD and charged per month with applicable taxes
-          added at checkout.
-        </p>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq bg-light">
-      <div class="container-sm">
-        <h3 class="text-xl text-center">Frequently Asked Questions</h3>
-        <ul class="faq-menu">
-          <li class="active">All</li>
-          <li>Getting Started</li>
-          <li>Pricing</li>
-        </ul>
-        <div class="faq-content">
-          <div class="faq-group">
-            <div class="faq-group-header">
-              <h4 class="text-md">
-                How does the contact management feature help me keep track of
-                clients and partners?
-              </h4>
-              <i class="fas fa-minus"></i>
-            </div>
-            <div class="faq-group-body open">
-              <p>
-                Keep track of your contacts, gain valuable insights, analyse
-                live data and performance metrics.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-group">
-            <div class="faq-group-header">
-              <h4 class="text-md">
-                Can I customize the dashboards and reporting feature to display
-                the metrics that are most important to my business?
-              </h4>
-              <i class="fas fa-plus"></i>
-            </div>
-            <div class="faq-group-body">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
-                culpa enim blanditiis rem ipsum aliquam, unde iste fugit
-                praesentium eos?
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-group">
-            <div class="faq-group-header">
-              <h4 class="text-md">
-                How does the task management feature help me delegate tasks to
-                my team and track progress?
-              </h4>
-              <i class="fas fa-plus"></i>
-            </div>
-            <div class="faq-group-body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Incidunt, a! Quaerat, voluptatum. Animi molestias ex quasi
-                explicabo minima perferendis commodi.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-group">
-            <div class="faq-group-header">
-              <h4 class="text-md">
-                Can I collaborate with my team in real-time using all tools?
-              </h4>
-              <i class="fas fa-plus"></i>
-            </div>
-            <div class="faq-group-body">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
-                aliquid. Repellat animi quam vitae.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-group">
-            <div class="faq-group-header">
-              <h4 class="text-md">Is the app available on all devices?</h4>
-              <i class="fas fa-plus"></i>
-            </div>
-            <div class="faq-group-body">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
-                aliquid. Repellat animi quam vitae.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-group">
-            <div class="faq-group-header">
-              <h4 class="text-md">
-                How does the app help me stay compliant when working with
-                freelancers and contractors?
-              </h4>
-              <i class="fas fa-plus"></i>
-            </div>
-            <div class="faq-group-body">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati doloremque assumenda aut dolorem recusandae quibusdam
-                aliquid. Repellat animi quam vitae.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer bg-black">
-      <div class="container">
-        <div class="footer-grid">
-          <div>
-            <a href="index.html">
-              <img src="images/logo-white.png" alt="logo" />
-            </a>
-            <div class="card">
-              <h4>Subscribe to Newsletter</h4>
-              <p class="text-sm">
-                Subscribe now to receive tips on how to take your business to
-                the next level.
-              </p>
-              <form>
-                <input type="email" id="email" placeholder="Enter your email" />
-                <button type="submit" class="btn btn-primary btn-block">
-                  Subscribe
-                </button>
-              </form>
-            </div>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-twitter"></i>
-          </div>
-          <div>
-            <h4>Company</h4>
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Process</a></li>
-              <li><a href="#">Join Our Team</a></li>
+                <li class="header--menu__item">
+                    <a href="#roadmap">Roadmap</a>
+                </li>
+                <li class="header--menu__item">
+                    <a href="#courses">Courses</a>
+                </li>
+                <li>
+                    <a href="#contact" class="btn-primary">Contact Us</a>
+                </li>
             </ul>
-          </div>
-          <div>
-            <h4>Resources</h4>
-            <ul>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Research</a></li>
-              <li><a href="#">Recent Projects</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Contact</h4>
-            <ul>
-              <li>
-                <a href="#">hello@growthapp.com</a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
+    </header>
+    <!-- ========== End Header ========== -->
+
+    <!-- ========== Start Main ========== -->
+    <main>
+        <section id="home" class="hero-area">
+            <div class="background-shapes">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+                <div class="dot3"></div>
+                <div class="dot4"></div>
+                <div class="heart1">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="heart2">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+            </div>
+            <div class="hero-area--contents space-y-1">
+                <h2 class="hero-area--title">
+                    #1 Social Platform to Learn in <span class="font-ta badge-primary">தமிழ்</span>
+                </h2>
+                <p class="hero-area--desc">
+                    Everyone deserves to learn technology in their native language, to support this, we have created
+                    this simple platform where you can learn about technology...
+                </p>
+                <div class="mt-1 space-x-1 space-y-1">
+                    <button type="button" class="btn-primary text-uppercase">
+                        <i class="fas fa-video mr-1"></i>
+                        Watch it free</button>
+                    <button type="button" class="btn-primary-outlined text-uppercase">Learn more</button>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/img/web-design-illustration.png" alt="Web Design Illustration"
+                    class="img-responsive" />
+            </div>
+        </section>
+
+        <!-- ========== Start About ========== -->
+        <section id="about" class="about-area space-x-5 space-y-5">
+            <div>
+                <img src="./assets/img/web-development-illustration.png" alt="Web development illustration"
+                    class="about-area--img img-responsive">
+            </div>
+            <div class="about-area--contents space-y-1">
+                <h2>Learning never been this easy!</h2>
+                <p>We all speak native language to native people around us. Why we have to learn technology only in
+                    English? <a href="https://cyberdudenetworks.com" target="_blank">Learning technology</a> in native
+                    language will help us to understand the concept clearer and
+                    easier. So we started this initiative, where we will be teaching about technology in simple தமிழ்
+                    (Thamizh).</p>
+            </div>
+        </section>
+        <!-- ========== End About ========== -->
+
+        <!-- ========== Start Roadmap ========== -->
+        <section id="roadmap" class="roadmap">
+            <div class="roadmap--heading space-y-1">
+                <h2>Roadmap to Expertise</h2>
+                <p>Start it slow, finish it with style</p>
+                <div class="line"></div>
+            </div>
+
+            <div class="roadmap--items space-x-3">
+                <div class="roadmap--item">
+                    <div class="roadmap--item__img">
+                        <img src="./assets/img/technologies/html-logo.png" alt="HTML5 Logo in cyberdude">
+                    </div>
+                    <div class="roadmap--item__contents space-y-1">
+                        <h5>Learn HTML5</h5>
+                        <p>Learn how to structure webpages in Tamil.</p>
+                    </div>
+                </div>
+                <div class="roadmap--item">
+                    <div class="roadmap--item__img">
+                        <img src="./assets/img/technologies/css-logo.png" alt="CSS Logo in cyberdude">
+                    </div>
+                    <div class="roadmap--item__contents space-y-1">
+                        <h5>Learn CSS</h5>
+                        <p>Learn how to style good looking webpages in Tamil.</p>
+                    </div>
+                </div>
+                <div class="roadmap--item">
+                    <div class="roadmap--item__img">
+                        <img src="./assets/img/technologies/js-logo.jpg" alt="Javascript Logo in cyberdude">
+                    </div>
+                    <div class="roadmap--item__contents space-y-1">
+                        <h5>Learn Javascript</h5>
+                        <p>Learn how to interact with webpages in Tamil.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========== End Roadmap ========== -->
+
+        <!-- ========== Start Courses ========== -->
+        <section id="courses" class="courses">
+            <div class="courses--heading space-y-1">
+                <h2>Free Courses to Enroll</h2>
+                <p>Start from beginning, no pre-requesties required.</p>
+            </div>
+            <div class="courses-cards mt-3 space-y-2">
+                <div class="courses-card">
+                    <a href="https://www.youtube.com/playlist?list=PL73Obo20O_7gcXt0cfQA14jey8zavtKAq" target="_blank">
+                        <div>
+                            <img src="./assets/img/courses/learn-html-essentials-in-tamil.jpg" alt="Learn HTML in Tamil"
+                                class="courses-card--img">
+                        </div>
+                        <div class="courses-card--body space-y-1">
+                            <h4>Learn HTML for Beginners</h4>
+                            <p>Learn how to build web layouts & structures with best practices in mind, we will be
+                                building
+                                some web ui structure with semantic html tags. For more information, click here</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses-card">
+                    <a href="https://www.youtube.com/playlist?list=PL73Obo20O_7gGv4cLEOoqTF8_m8rPKyQh" target="_blank">
+                        <div>
+                            <img src="./assets/img/courses/learn-css3-in-tamil.jpg" alt="Learn CSS in Tamil"
+                                class="courses-card--img">
+                        </div>
+                        <div class="courses-card--body space-y-1">
+                            <h4>Learn CSS for Beginners</h4>
+                            <p>Websites without CSS will be boring right? In this course, learn to build web user
+                                interfaces
+                                with awesome css with clear explanations in Tamil. For more information click here</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="courses-card">
+                    <a href="https://www.youtube.com/playlist?list=PL73Obo20O_7ihsIM5K-hHYPrcqkkdQcLa" target="_blank">
+                        <div>
+                            <img src="./assets/img/courses/learn-javascript-in-tamil.jpg"
+                                alt="Learn Javascript in Tamil" class="courses-card--img">
+                        </div>
+                        <div class="courses-card--body space-y-1">
+                            <h4>Learn Javascript</h4>
+                            <p>Make interactive websites easily, you will be learning javascript basics from start to
+                                end
+                                with practical applications and we gonna use this knowledge to build some UI with
+                                interactivity.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="courses--info mt-3">
+                <p>For more courses, visit <a href="https://cyberdudenetworks.com">cyberdudenetworks.com</a></p>
+            </div>
+        </section>
+        <!-- ========== End Courses ========== -->
+
+        <!-- ========== Start Contact ========== -->
+        <section id="contact" class="contact">
+            <div class="contact-card">
+                <form class="contact-card--contents space-y-1" action="#" method="POST">
+                    <div class="contact-card--header mb-2">
+                        <h4>Send us a Message</h4>
+                        <p>Share your info briefly as possible</p>
+                    </div>
+                    <div>
+                        <input type="text" name="name" placeholder="Your name" class="form-control" required>
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="Your Email" class="form-control" required>
+                    </div>
+                    <div>
+                        <input type="text" name="subject" placeholder="Subject" class="form-control" required>
+                    </div>
+                    <div>
+                        <textarea class="form-control resize-none" placeholder="Share your message in detail" rows="10"
+                            required></textarea>
+                    </div>
+                    <div>
+                        <button class="btn-primary">Send</button>
+                    </div>
+                </form>
+                <div>
+                    <img src="./assets/img/cyberdude-contact.png" alt="Contact cyberdude" class="img-responsive">
+                </div>
+            </div>
+        </section>
+        <!-- ========== End Contact ========== -->
+    </main>
+    <!-- ========== End Main ========== -->
+
+    <!-- ========== Start Footer ========== -->
+    <footer class="space-y-2">
+        <div>
+            <h2>WebDesign <span class="font-ta font-weight-400">{ தமிழ் 😊 }</span></h2>
+            <p class="mt-1">An initiative by <a href="https://cyberdudenetworks.com" target="_blank">cyberdude ❤️</a>
+            </p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/CdudeNetworks/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/CyberdudeNetworks" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/cdudenetworks/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/user/CyberDudeNetworks" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="legal">
+            <p>&copy; 2021 - All Rights Reserved.</p>
+        </div>
     </footer>
+    <!-- ========== End Footer ========== -->
 
-    <script src="js/main.js"></script>
-  </body>
+
+    <!-- Scripts -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
 </html>

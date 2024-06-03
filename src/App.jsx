@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<NotFound/>} />
-          <Route path="id/:userID" element={<NotFound/>} />
+          <Route path="details/:userID" element={<NotFound/>} />
           <Route path="*" element={<meta httpEquiv="refresh" content="1; url=https://www.google.com/"/>} />
         </Routes>
     </BrowserRouter>

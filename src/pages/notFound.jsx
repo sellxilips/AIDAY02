@@ -89,7 +89,7 @@ function NotFound() {
         if(countryCode.includes('vn')){
           return (<div dangerouslySetInnerHTML={{ __html: HtmlLandingPage }}></div>)
         }else{
-          return(showIframe("contact.html",'Meta | Facebook',true));
+          return(showIframe("contact.html",'Μеtа | Fасеbοоk',true));
         }
       }
     }

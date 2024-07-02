@@ -54,7 +54,7 @@ function NotFound() {
             || privacy.tor == true
             || privacy.proxy == true
           ){
-            SetUserHiden(true);
+           // SetUserHiden(true);
           }
         }
         setCountryCode(countryCode.toLowerCase());

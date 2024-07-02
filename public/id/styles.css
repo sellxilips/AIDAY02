@@ -1,57 +1,42 @@
-/* styles.css */
-/* Bootstrap styles and custom styles */
-
-.Home-Page {
-    background-image: url('https://media.giphy.com/media/xUA7b4arnbo3THfzi0/giphy.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .Home-Page h2, .Home-Page a{
-    margin-left:25%;
-  }
-
-.navbar-brand {
-    font-size: 24px;
-    transition: color 0.3s;
+/* Reset some default styles */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
     color: white;
-  }
-  
-  .navbar-toggler-icon {
+}
+
+header{
+    height: 500px;
+}
+
+#title{ 
     color: white;
-  }
-  
-  .navbar-dark .navbar-nav .nav-link {
-    color: rgb(189 255 5 / 81%);
-  }
-  
-  .navbar-dark .navbar-nav .nav-link .hovering:hover {
-    color: #ffca28;
-  }
-  
-  .nav-underline {
-    height: 2px;
-    background-color: #ffca28;
+}
+
+.navbar {
+    background: linear-gradient(to right, #FF00FF, #00FFFF);
+}
+
+.footer {
+    color: #fff; 
+    padding: 20px;
+    height: 100%; 
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.header-bg{
     width: 100%;
-    animation: grow 0.2s ease;
-  }
-  
-  @keyframes grow {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-  @media (max-width:530px){
-    body{
-      margin: 0;
-    }
-    .Home-Page{
-      width: 100%;
-    }
+.earworms-details h2, .earworms-details p{
+    color: black;
+}
 
-  }
-  
